@@ -4,6 +4,12 @@
 
 >This program is meant to be used for purely educational purposes. Use of this program is a direct violation of Amazon Game Studio Terms of Service, and is a punishiable offence.
 
+### **Intended Use**
+
+This bot was built with two purposes in mind:
+1. Absolve me of my boredom
+2. Demonstrate how most games (in this case New World) is vanuable to screen scraping bots, give detailed description of how they work, and outline how to combat them.
+
 ### **Requirements**
 
 - Python - Verison 3.9
@@ -80,6 +86,19 @@ Because fishing is a time gated activity, it is important that `opencv matchTemp
 To do that we agressively limit the area of the screen that we are working with. In general we are working with center top area of the screen, which is why the bot skews the screen down.
 
 As an example of fishing marker will move to the left, or right edges of the screen the bot will not be able to detect them.
+
+### **How To Stop This Style of Bots**
+
+From the description above, I think it is very clear that any bot that uses image scraping techinqiues is vanuable to any change that require you to look at the entire pixel space.
+
+It is also vanurable to any type of unpredicted events, or more importantly unprectable geometries that it has not seen before. Introducing transparrent backgrounds, or making backgrounds of menus non-static will deminish the ability to identify menus.
+
+Most importantly introduction of randomly timed events that require just in time actions is another viable approach.
+
+This goes hand-in-hand with other bot monitoring technicques, such as looking for repeated action and click timings (no human can always click consistently at 1.92s on each fishing cast).
+
+>**I heavily encourage Amazon Gaming Studios to adopt some / all of these techniques to combat botting in New World**
+
 
 ### **Known Issues**
 
