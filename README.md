@@ -73,7 +73,7 @@ Since New World locks your mouse, use of `pydirectinput` library is somewhat mes
 
 Through experimentation I found that if we move the screen slightly to start with, and go through a crazy spin, all following input gains a lot more stability. Given that we always want to make sure that our camera is looking down, we want to always drag Y input down. 
 
-### **Image Detection Speed**
+#### **Image Detection Speed**
 
 Because fishing is a time gated activity, it is important that `opencv matchTemplate` function run fast enough for us to make a decision before it is too late.
 
